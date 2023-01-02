@@ -390,9 +390,9 @@ p.aep{
 
 /*mobile configuration*/
 @media(max-width: 500px){
-    /*html, body{
+    html, body{
         overflow-x: hidden;
-    }*/
+    }
     .headtext h1.constant{
         font-size: 40px;
     }
