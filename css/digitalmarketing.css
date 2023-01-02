@@ -1,0 +1,74 @@
+.dmbg{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dmi{
+    width: 60%;
+    margin-top: 150px;
+}
+.smmc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+.smmc1{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.smmmc2{
+    display: grid;
+    width: 400px;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.smmi{
+    width: 500px;
+    height: 500px;
+
+}
+.btnholder{
+    display: flex;
+    align-items: center;
+}
+.smmhead{
+    text-align: center;
+    color: #00F4BA;
+    padding: 20px;
+}
+.smmcontent{
+    text-align: left;
+    color: white;
+    justify-content: center;
+}
+.btnholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webworks{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+iframe{
+    width: 1080px;
+    height: 720px;
+}
+p{
+    font-size: 50;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+}

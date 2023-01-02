@@ -1,0 +1,18 @@
+.ourwrkhead{
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+    color: white;
+}
+.ourwrkbody{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    border: 10;
+}

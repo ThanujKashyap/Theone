@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    
+}
+body{
+    background: #0D151D;
+}
+ 
+.homesc{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,.3),rgba(12,3,51,.3));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 90%;
+    height: 75px;
+    background: #0D151D;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    padding-right: 25px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+    font-weight: 600;
+    color: #00F4BA;
+}
+ul li::after{
+    content: '';
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .5s ease-in-out;
+
+}
+ul li:hover::after{
+    width: 100%;
+    
+}
+.navlogo{
+    width: 200px;
+    padding: 25px;
+}
+.headtext{
+    text-align: center;
+    margin: 10px;
+}
+
+.headtext h1.constant{
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+    margin: 25px;
+}
+.headtext h1.dynamic{
+    position: relative;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.0);
+    font-weight: 700;
+    margin: 25px;
+    -webkit-text-stroke: .5px #00F4BA;
+}
+.headtext h1.dynamic::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #00F4BA;
+    -webkit-text-stroke: 0px #0D151D;
+    border-right: 2px solid #00F4BA;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+  
+    70%,90%{
+        width: 100%;
+    }
+
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.btncontainer .butn1{
+    width: 100px;
+    height: 40px;
+    border: 2px #00F4BA solid;
+    border-radius: 50px;
+    margin: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.btncontainer .butn1 a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #00F4BA;
+
+}
+
+.close{
+    width: 15px;
+}
+.open{
+    width: 20px;
+}
+.open{
+    display: none;
+}
+.close{
+    display: none;
+}
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    video.video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    video.video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+/* Service Section*/
+section.services{
+    width: 100%;
+    background:  none;
+    margin-top: 75px;
+    
+}
+.serbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1.serhead{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 15px;
+    margin-bottom: 30px;
+    
+}
+h1.cmv{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 15px;
+}
+h1.cmv{
+    display: none;
+}
+.serbox1{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: black ;
+    margin-left:  200px;
+    margin-right: 200px;
+}
+.glow1::before , .glow1::after{
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    background: linear-gradient(45deg, #00F4BA, #0D151D);
+    background-size: 400%;
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+    z-index: -1;
+    animation: glow 20s linear infinite;
+}
+@keyframes glow{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.glow1::after{
+    filter: blur(10px);
+}
+@media(max-width:500px){
+    .serbg{
+        display: grid;   
+    }
+    h1.cmv{
+        display: flex;
+        justify-content: center;
+    }
+    h1.serhead{
+        display: none;
+    }
+}
+.knowmore{
+    display: flex;
+    justify-content: center;
+}
+.btnkm{
+    width: 100px;
+    height: 40px;
+    border: 2px #00F4BA solid;
+    border-radius: 50px;
+    margin: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.btnkm a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #00F4BA;
+
+}
+.serboxh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1.serviceheading{
+    font-weight: 600;
+    font-size: 35px;
+    color: #00F4BA;
+    text-align: center;
+    padding: 15px;
+}
+p.servicetext{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+p.servicetext b a{
+    text-decoration: none;
+    color: #00F4BA;
+    cursor: pointer;
+}
+
+/* our designed website */
+
+section.ourwork{
+    width: 100%;
+    height: 750px;
+    border: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+iframe{
+    width: 1080px;
+    height: 720px;
+}
+h1.oworks{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 50px;
+}
+.butn2{
+    width: 100px;
+    height: 40px;
+    border: 2px #00F4BA solid;
+    border-radius: 50px;
+    margin: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.butn2 a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #00F4BA;
+}
+.butn2h{
+    display: flex;
+    justify-content: center;
+}
+iframe.cbc{
+    display: flex;
+    justify-content: center;
+}
+.imagebox{
+    display: grid;
+    justify-items: center;
+}
+.imgbg{
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin: 10px;
+}
+img.gimg{
+    width: 300px;
+}
+.dw{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+}
+.tbox1{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: black ;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+section.aboutus{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.abch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.alh{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+img.alogo{
+    width: 600px;
+}
+.aexh{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 25px;
+}
+p.aep{
+    text-align: justify;
+    color: white;
+    font-size: 18px;
+}
+
+/*mobile configuration*/
+@media(max-width: 500px){
+    /*html, body{
+        overflow-x: hidden;
+    }*/
+    .headtext h1.constant{
+        font-size: 40px;
+    }
+    .headtext h1.dynamic{
+        font-size: 45px;  
+    }
+    .navLinks ul li{
+        display: block;
+    }
+  
+    .navLinks{
+        position: absolute;
+        background: #0D151D;
+        height: 50vh;
+        width: 200px;
+        top: 0;
+        right: -220px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .close{
+        display: block;
+        margin: 15px;
+        cursor: pointer;
+    }
+    .open{
+        display: block;
+        margin: 15px;
+        cursor: pointer;
+    }
+    .navlogo{
+        width: 150px;
+    }
+    .navLinks ul{
+        padding: 15px;
+
+    }
+    iframe{
+        width: 900px;
+        height: 720px;
+    }
+    section.services{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    .serbg{
+        display: grid; 
+        justify-items: center;
+        align-items: center;
+        width: 100%; 
+    }
+    .serboxh{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1.cmv{
+        display: flex;
+        justify-content: center;
+    }
+    h1.serhead{
+        display: none;
+    }
+    .serboxglow1{
+        margin: 0;
+    }
+    .serbox1{
+        margin: 0;
+    }
+    .abch{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    img.alogo{
+        width: 250px;
+    }
+}

@@ -1,0 +1,194 @@
+section{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+}
+    
+h1.dw{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 50px;
+}
+h2.brandingexp{
+    text-align: justify;
+    padding: 60px;
+    color: white;
+}
+.bmar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.bmarcont{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+h1.bmarhead{
+    text-align: center;
+    color: #00F4BA;
+    padding: 20px;
+}
+p.bmarcontent{
+    text-align: justify;
+    font-size: 20px;
+}
+.bmar2{
+    display: none;
+}
+
+section.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 400px;
+}
+.footercontentholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.linksholder{
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    margin: 25px;
+    width: 300px;
+}
+h4.links{
+    text-align: left;
+    font-weight: 600;
+    font-size: 40px;
+    color: #00F4BA;
+}
+.linksholder ul{
+    padding: 5px;
+}
+.linksholder ul li{
+    display: block;
+}
+.logoandiconsholder{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 25px;    
+}
+.contact{
+    display: grid;
+    align-items: right;
+    justify-items: right;
+    margin: 30px 0px 30px 30px;
+    width: 300px;
+}
+.logoholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogo{
+    width: 300px;
+}
+.contact1 a{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+
+}
+h3 a{
+    text-decoration: none;
+    color: white;
+}
+.iconholder ul a img{
+    width: 31px;
+}
+.iconholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.iconholder {
+    padding: none;
+}
+ul.ul{
+    padding: 0;
+    display: flex;
+}
+img.callicon{
+    width: 30px;
+}
+.con{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 10px 20px;
+    cursor: pointer;
+}
+.con a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+
+
+
+
+/* mobile configuration */
+@media(max-width: 500px){
+    .bmar{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .bmar1 img{
+        width: 350px;
+        padding: 0px;
+    }
+    p.bmarcontent{
+        text-align: justify;
+        font-size: 22px;
+        padding: 20px;
+    }
+    .bmar12{
+        display: none;
+    }
+    .bmar2{
+        display: flex;
+
+    }
+    .bmar2 img{
+        width: 350px;
+        padding: 0px;
+    }
+    section.footer{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .footercontentholder{
+        display: grid;
+    }
+    section.footer{
+        height: auto;
+    }
+    .contact{
+        display: grid;
+        justify-items: left;
+    }
+    .linksholder{
+        display: none;
+    }
+    h2.brandingexp{
+        padding: 25px;
+    }
+}
